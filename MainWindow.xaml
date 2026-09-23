@@ -1,0 +1,28 @@
+﻿<Window x:Class="Pizzarendelol.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pizzarendelol"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <ListBox x:Name="PizzaListBox" SelectionChanged="Kivalasztas"/> 
+
+        <TextBox x:Name="txtbox_HozzaAdas"/>
+        <Button x:Name="btn_HozzaAdas" Content="Hozzás adás" Click="btn_HozzaAdas_Click"/>
+
+
+        <TextBox x:Name="TextBoxPizza"/>
+        <Button x:Name="btn_torles" Content="Törlés" Click="btn_torles_Click" />
+
+
+        <ListBox x:Name="list_Meretek" SelectionChanged="KivalasztasMeretek" />
+        
+        <Button x:Name="btn_HozzaadMeret" Content="Hozzáadás" Click="btn_HozzaadMeret_Click"/>
+
+        <Button x:Name="btn_Rendeles" Content="Rendelés" Click="btn_Rendeles_Click"/>
+        <TextBlock x:Name="txtblock_Rendeles" Text=""/>
+        <TextBlock x:Name="txtblock_Rendelesek" Text="Rendelések: "/>
+    </StackPanel>
+</Window>
