@@ -104,6 +104,5 @@ namespace Pizzarendelol
 
             txtblock_Rendeles.Text = sb.ToString();
         }
-
     }
 }
